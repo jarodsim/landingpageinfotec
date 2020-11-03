@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>INFOTEC</title>
+        <title>INFO-TEC</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         <div className={styles.rigth}>
-          <h1>Em breve!</h1>
+          <h1>Site da Info-Tec em construção</h1>
           <h3>Estamos trabalhando para cada dia  lhe atender melhor.</h3>
 
           <div className={styles.contato}>
