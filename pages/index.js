@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css"
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   function sendWhatsappMessage() {
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>INFO-TEC</title>
+        <title>INFO-TEC Piauí</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -42,12 +41,12 @@ export default function Home() {
 
       <div className={styles.sides}>
         <div className={styles.left}>
-          <Image src="/robo.png" alt="logo do robozinho da infotec" unsized className={styles.robo_image} />
+          <img src="/robo.png" alt="logo do robozinho da info-tec" className={styles.robo_image} />
         </div>
 
         <div className={styles.rigth}>
-          <h1>Site da Info-Tec em construção</h1>
-          <h3>Estamos trabalhando para cada dia  lhe atender melhor.</h3>
+          <h1>Site da info-tec em desenvolvimento</h1>
+          <h2>Estamos trabalhando para cada dia  lhe atender melhor.</h2>
 
           <div className={styles.contato}>
             <p>Você pode entrar em contato conôsco, é só mandar uma mensagem para o nosso whatsapp :)</p>
