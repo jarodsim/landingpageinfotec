@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(120, 117, 181);
+  background: linear-gradient(90deg, rgba(120, 117, 181, 1) 0%, rgba(82, 191, 234, 1) 0%, rgba(44, 175, 228, 0.6558998599439776) 100%); */
+  background-image: url('/fundo.png');
+}
+
+.sides {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rigth {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+}
+
+.robo_image {
+  width: 100%;
+}
+
+.contato {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1190d5;
+  background-color: #FFF;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn_whatsapp {
+  width: 50%;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background-color: #1190d5;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .left {
+    width: 50%;
+  }
+
+  .rigth {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .sides{
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .rigth {
+    width: 100%;
+  }
+}
