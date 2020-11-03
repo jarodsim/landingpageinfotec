@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js",
+    "export": "yarn run build && next export"
   },
   "dependencies": {
     "next": "10.0.0",
