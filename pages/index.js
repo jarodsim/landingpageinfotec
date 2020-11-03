@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css"
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   function sendWhatsappMessage() {
@@ -38,9 +39,10 @@ export default function Home() {
         <meta property="twitter:description" content="Info-tec, seu melhor provedor de internet fibra-óptica. Info-tec, mais que produtos, vendemos soluções." />
         <meta property="twitter:image" content="" />
       </Head>
+
       <div className={styles.sides}>
         <div className={styles.left}>
-          <img src="/robo.png" alt="logo do robozinho da infotec" className={styles.robo_image} />
+          <Image src="/robo.png" alt="logo do robozinho da infotec" unsized className={styles.robo_image} />
         </div>
 
         <div className={styles.rigth}>
