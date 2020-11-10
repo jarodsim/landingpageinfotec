@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Plano from '../components/Plano'
 import QuemSomos from '../components/QuemSomos'
 import Onde from '../components/Onde'
+import Footer from '../components/Footer'
 
 export default function Home() {
   function sendWhatsappMessage() {
@@ -11,7 +12,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="topo">
       <Head>
         <title>INFO-TEC Piauí</title>
         <meta charSet="utf-8" />
@@ -62,11 +63,13 @@ export default function Home() {
         </div>
       </div>
       {/* PLANOS */}
-      <Plano />
+      <Plano/>
       {/* ONDE ESTAMOS */}
-      <Onde />
+      <Onde/>
       {/* QUEM SOMOS */}
-      <QuemSomos />
+      <QuemSomos/>
+      {/* FOOTER */}
+      <Footer/>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import styles from "../../styles/QuemSomos.module.css"
 
 export default function QuemSomos() {
         return (
-                <div className={styles.quem_somos}>
+                <div className={styles.quem_somos} id="quem_somos">
                         <h2>Quem Somos?</h2>
                         <div className={styles.body}>
                                 <div className={styles.imagem}>

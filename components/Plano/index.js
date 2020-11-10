@@ -39,7 +39,7 @@ export default function Plano() {
       }
 
     return (
-        <div className={styles.planos_container}>
+        <div className={styles.planos_container} id="planos">
             {/* CABEÇALHO */}
             <div className={styles.cabecalho}>
 

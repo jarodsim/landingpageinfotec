@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: #FB862D;
+    font-family: 'Poppins';
+}
+
+.links{
+    width: 33%;
+}
+
+.links ul{
+    list-style: none;
+}
+
+.endereco{
+    width: 33%;
+}
+
+.contato{
+    width: 33%;
+}
+
+.contato p{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px){
+    .container{
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .links{
+        width: 100%;
+    }
+
+    .endereco{
+        width: 100%;
+    }
+
+    .contato{
+        width: 100%;
+    }
+}
