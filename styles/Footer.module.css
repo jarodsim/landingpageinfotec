@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     min-height: 300px;
     display: flex;
@@ -10,41 +10,42 @@
     font-family: 'Poppins';
 }
 
-.links{
+.links {
     width: 33%;
 }
 
-.links ul{
+.links ul {
     list-style: none;
 }
 
-.endereco{
+.endereco {
     width: 33%;
 }
 
-.contato{
+.contato {
     width: 33%;
 }
 
-.contato p{
+.contato ul {
     cursor: pointer;
+    list-style: none;
 }
 
-@media screen and (max-width: 1080px){
-    .container{
+@media screen and (max-width: 1080px) {
+    .container {
         flex-flow: column;
         text-align: center;
     }
 
-    .links{
+    .links {
         width: 100%;
     }
 
-    .endereco{
+    .endereco {
         width: 100%;
     }
 
-    .contato{
+    .contato {
         width: 100%;
     }
 }

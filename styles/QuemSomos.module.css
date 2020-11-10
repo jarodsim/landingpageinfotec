@@ -34,7 +34,11 @@
 }
 
 .imagem img {
-    width: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .texto {
@@ -47,6 +51,10 @@
     }
 
     .imagem{
+        width: 100%;
+    }
+
+    .imagem img{
         width: 100%;
     }
 

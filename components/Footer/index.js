@@ -30,8 +30,14 @@ export default function Footer() {
 
             <div className={styles.contato}>
                 <h3>Formas de Contato</h3>
-                <p onClick={() => sendWhatsappMessage()}>Nos mande uma mensagem pelo whatsapp: 89994578337</p>
-                <p>Ou nos ligue em nosso 0800, é de graça :) 08000420497</p>
+                <ul>
+                    <li onClick={() => sendWhatsappMessage()}>
+                        Nos mande uma mensagem pelo whatsapp: 89994578337
+                    </li>
+                    <li>
+                        Ou nos ligue em nosso 0800, é de graça :) 08000420497
+                    </li>
+                </ul>
             </div>
         </div>
     )
