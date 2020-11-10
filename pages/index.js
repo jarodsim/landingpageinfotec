@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Plano from '../components/Plano'
 import QuemSomos from '../components/QuemSomos'
+import Onde from '../components/Onde'
 
 export default function Home() {
   function sendWhatsappMessage() {
@@ -49,7 +50,7 @@ export default function Home() {
 
         <div className={styles.rigth}>
           <h1>Site da info-tec em desenvolvimento</h1>
-          <h2>Estamos trabalhando para cada dia  lhe atender melhor.</h2>
+          <h3>Estamos trabalhando para cada dia  lhe atender melhor.</h3>
 
           <div className={styles.contato}>
             <p>Você pode entrar em contato conôsco, é só mandar uma mensagem para o nosso whatsapp :)</p>
@@ -62,6 +63,8 @@ export default function Home() {
       </div>
       {/* PLANOS */}
       <Plano />
+      {/* ONDE ESTAMOS */}
+      <Onde />
       {/* QUEM SOMOS */}
       <QuemSomos />
     </div>
