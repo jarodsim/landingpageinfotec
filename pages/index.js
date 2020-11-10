@@ -1,6 +1,9 @@
 import styles from "../styles/Home.module.css"
 import Head from 'next/head'
 
+import Plano from '../components/Plano'
+import QuemSomos from '../components/QuemSomos'
+
 export default function Home() {
   function sendWhatsappMessage() {
     window.location.href = 'https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?'
@@ -57,6 +60,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* PLANOS */}
+      <Plano />
+      {/* QUEM SOMOS */}
+      <QuemSomos />
     </div>
   )
 }
