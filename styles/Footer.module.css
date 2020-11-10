@@ -1,13 +1,25 @@
-.container {
+.container{
     width: 100%;
     min-height: 300px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     color: #FFF;
     background-color: #FB862D;
     font-family: 'Poppins';
+}
+
+.frase{
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
@@ -32,7 +44,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .container {
+    .info {
         flex-flow: column;
         text-align: center;
     }
