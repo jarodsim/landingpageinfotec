@@ -5,11 +5,9 @@ import Plano from '../components/Plano'
 import QuemSomos from '../components/QuemSomos'
 import Onde from '../components/Onde'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 export default function Home() {
-  function sendWhatsappMessage() {
-    window.location.href = 'https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?'
-  }
 
   return (
     <div className={styles.container} id="topo">
@@ -24,6 +22,7 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#00aba9" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="author" content="Jarod Mateus"/>
 
         {/* SEO */}
         {/*  <!-- Primary Meta Tags --> */}
@@ -43,25 +42,8 @@ export default function Home() {
         <meta property="twitter:description" content="Info-tec, seu melhor provedor de internet fibra-óptica. Info-tec, mais que produtos, vendemos soluções." />
         <meta property="twitter:image" content="" />
       </Head>
-
-      <div className={styles.sides}>
-        <div className={styles.left}>
-          <img src="/robo.png" alt="logo do robozinho da info-tec" className={styles.robo_image} />
-        </div>
-
-        <div className={styles.rigth}>
-          <h1>Site da info-tec em desenvolvimento</h1>
-          <h3>Estamos trabalhando para cada dia  lhe atender melhor.</h3>
-
-          <div className={styles.contato}>
-            <p>Você pode entrar em contato conôsco, é só mandar uma mensagem para o nosso whatsapp :)</p>
-
-            <button className={styles.btn_whatsapp} onClick={() => sendWhatsappMessage()}>
-              Mandar mensagem!
-            </button>
-          </div>
-        </div>
-      </div>
+      {/* HEADER */}
+      <Header />
       {/* PLANOS */}
       <Plano/>
       {/* ONDE ESTAMOS */}

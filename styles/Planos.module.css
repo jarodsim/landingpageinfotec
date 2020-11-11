@@ -29,7 +29,7 @@
     font-weight: 800;
 }
 
-.cabecalho h2{
+.cabecalho h2 {
     font-weight: 200;
 }
 
@@ -121,28 +121,35 @@
     cursor: pointer;
 }
 
-.button_getPlane:hover{
+.button_getPlane:hover {
     background-color: #81C54D;
 }
 
 
-@media screen and (max-width: 1400px){
-    .planos{
-        flex-direction: column;
-    }
-    .paper{
-        width: 40%;
-        margin-top: 10px;
+@media screen and (max-width: 1400px) {
+    .planos {
         flex-wrap: wrap;
+    }
+
+    .paper {
+        width: 25%;
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 1080px){
-    .planos{
+@media screen and (max-width: 900px) {
+    .paper {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .planos {
         flex-direction: column;
     }
 
-    .paper{
+    .paper {
         width: 90%;
         margin-top: 10px;
     }
