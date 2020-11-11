@@ -5,6 +5,8 @@ import styles from '../../styles/Header.module.css'
 
 export default function Header() {
     let header = ''
+    let menu_mobile = ''
+    let btn_goToTop = ''
 
     function sendWhatsappMessage() {
         window.location.href = 'https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?'
@@ -12,34 +14,50 @@ export default function Header() {
 
     // para alterar a o background do header de acordo com o scroll do mouse
     useEffect(() => {
-        header = screen.width > 1024 ? header = document.getElementsByClassName('Header_header__182Qc')[0] : header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
         window.onscroll = function () { scrollFunction() }
 
         function scrollFunction() {
+            header = screen.width > 1024 ? header = document.getElementsByClassName('Header_header__182Qc')[0] : header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
+
+            btn_goToTop = document.getElementsByClassName('Header_goToTop__3G4JL')[0]
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 header.style.backgroundColor = "#18C3FF"
                 header.style.width = '100%'
+                btn_goToTop.style.display = 'block'
             } else {
                 header.style.backgroundColor = "#3bb7e82f"
+                btn_goToTop.style.display = 'none'
                 if (screen.width > 1024) {
                     header.style.width = '80%'
                 }
             }
         }
     }, [])
+
     // open adn close the menu_mobile
     function handle_menu() {
-        const menu_mobile = document.getElementsByClassName('Header_menu_mobile__29HgR')[0]
+        menu_mobile = document.getElementsByClassName('Header_menu_mobile__29HgR')[0]
         header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
 
         if (header.style.display === 'flex' || header.style.length <= 0) {
             header.style.display = 'none'
             menu_mobile.style.display = 'flex'
-            window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         } else {
             header.style.display = 'flex'
             menu_mobile.style.display = 'none'
         }
+    }
+
+    // go to top
+    function goToTop() {
+        menu_mobile = document.getElementsByClassName('Header_menu_mobile__29HgR')[0]
+        header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
+        if (screen.width <= 1024) {
+            menu_mobile.style.display = 'none'
+            header.style.display = 'flex'
+        }
+        window.scrollTo(0, 0)
     }
 
     return (
@@ -110,6 +128,11 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+
+            {/* GO TO TOP BUTTON */}
+            <button className={styles.goToTop} onClick={() => goToTop()}>
+                <img src="/top.png" alt="ícone de seta para cima para levar o usuário para o topo da página"/>
+            </button>
         </div>
     )
 }
