@@ -12,9 +12,7 @@ export default function Header() {
 
     // para alterar a o background do header de acordo com o scroll do mouse
     useEffect(() => {
-        screen.width > 1024 ? header = document.getElementsByClassName('Header_header__182Qc')[0] : header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
-
-
+        header = screen.width > 1024 ? header = document.getElementsByClassName('Header_header__182Qc')[0] : header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
         window.onscroll = function () { scrollFunction() }
 
         function scrollFunction() {
@@ -32,10 +30,12 @@ export default function Header() {
     // open adn close the menu_mobile
     function handle_menu() {
         const menu_mobile = document.getElementsByClassName('Header_menu_mobile__29HgR')[0]
+        header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
 
         if (header.style.display === 'flex' || header.style.length <= 0) {
             header.style.display = 'none'
             menu_mobile.style.display = 'flex'
+            window.scrollTo(0,0)
         } else {
             header.style.display = 'flex'
             menu_mobile.style.display = 'none'
