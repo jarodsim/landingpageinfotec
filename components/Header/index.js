@@ -118,6 +118,13 @@ export default function Header() {
                         <p className={styles.area_do_cliente_btn}>
                             <Link href="https://portal.interativabr.com.br/facilita" >Área do Cliente</Link>
                         </p>
+
+                        <hr />
+
+                        <p className={styles.sem_internet_paragraph}>Está Sem Internet?</p>
+                        <div className={styles.abrir_chamado_div}>
+                        <Link href='https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet' >Abrir chamado</Link>
+                        </div>
                     </div>
                 </header>
             </div>
