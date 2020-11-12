@@ -12,6 +12,7 @@
 
 .container_header {
     width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .header {
@@ -142,18 +143,18 @@
 
 /* END MOBILE_MENU */
 .left_header {
-    width: 50%;
+    width: 30%;
 }
 
 .left_header a {
     text-decoration: none;
-    color: #FC852B;
+    color: #fff;
     font-weight: 600;
     font-size: 2.1em;
 }
 
 .rigth_header {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -172,7 +173,42 @@
 }
 
 .rigth_header a:hover {
-    color: #F9E664;
+    color: #ddd;
+}
+
+/* DROPDOWN-MENU */
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content{
+  display: none;
+  position: absolute;
+  color: #1190d5;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  min-height: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown p:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.dropdown_content a:hover {
+    color: #1190d5d5;
+}
+
+.dropdown:hover .dropdown_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* MAIN-INFO */
@@ -340,5 +376,9 @@
 
     .btn_whatsapp {
         width: 90%;
+    }
+
+    .left_header{
+        width: 50%;
     }
 }

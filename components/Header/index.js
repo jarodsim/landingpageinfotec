@@ -57,7 +57,12 @@ export default function Header() {
             menu_mobile.style.display = 'none'
             header.style.display = 'flex'
         }
-        window.scrollTo(0, 0)
+
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(goToTop);
+            window.scrollTo(0, c - c / 8);
+        }
     }
 
     return (
@@ -72,6 +77,13 @@ export default function Header() {
                         <Link href="#planos">Nossos Planos</Link>
                         <Link href="#onde">Onde Atendemos</Link>
                         <Link href="#quem_somos">Quem Somos</Link>
+
+                        <div className={styles.dropdown}>
+                            <p className={styles.dropdown_btn}>Está Sem Internet?</p>
+                            <div className={styles.dropdown_content}>
+                                <Link href='https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet'>Abrir chamado</Link>
+                            </div>
+                        </div>
                         <p className={styles.area_do_cliente_btn}>
                             <Link href="https://portal.interativabr.com.br/facilita" >Área do Cliente</Link>
                         </p>
@@ -131,7 +143,7 @@ export default function Header() {
 
             {/* GO TO TOP BUTTON */}
             <button className={styles.goToTop} onClick={() => goToTop()}>
-                <img src="/top.png" alt="ícone de seta para cima para levar o usuário para o topo da página"/>
+                <img src="/top.png" alt="ícone de seta para cima para levar o usuário para o topo da página" />
             </button>
         </div>
     )
