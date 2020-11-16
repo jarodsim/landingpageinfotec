@@ -14,32 +14,29 @@ export default function Footer() {
             <div className={styles.info}>
                 <div className={styles.links}>
                     <h3>Acesso Rápido</h3>
-                    <ul>
-                        <li><Link href="#planos">Planos</Link></li>
-                        <li><Link href="#onde">Onde Atendemos</Link></li>
-                        <li><Link href="#quem_somos">Quem Somos</Link></li>
-                        <li><Link href="#topo">Topo</Link></li>
-                    </ul>
+                    <Link href="#planos">Planos</Link>
+                    <Link href="#onde">Onde Atendemos</Link>
+                    <Link href="#quem_somos">Quem Somos</Link>
+                    <Link href="#topo">Topo</Link>
                 </div>
 
                 <div className={styles.endereco}>
                     <h3>Onde Nos Encontrar</h3>
                     <address>
                         Francisco Ayres - PI, <br />
-                Rua Tito Ferreia, 420 - Bairro Centro
-            </address>
+                        Rua Tito Ferreia, 420 - Bairro Centro
+                    </address>
                 </div>
 
                 <div className={styles.contato}>
                     <h3>Formas de Contato</h3>
-                    <ul>
-                        <li onClick={() => sendWhatsappMessage()}>
-                            Nos mande uma mensagem pelo whatsapp: 89994578337
-                </li>
-                        <li>
-                            Ou nos ligue em nosso 0800, é de graça :) 08000420497
-                </li>
-                    </ul>
+                    <p onClick={() => sendWhatsappMessage()}>
+                        Nos mande uma mensagem pelo whatsapp: 89994578337
+                    </p>
+
+                    <p>
+                        Ou nos ligue em nosso 0800, é de graça :) 08000420497
+                    </p>
                 </div>
             </div>
             <small>&copy; Todos os direitos reservados a info-tec - 2020</small></div>
