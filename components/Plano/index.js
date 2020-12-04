@@ -4,14 +4,20 @@ import styles from '../../styles/Planos.module.css'
 export default function Plano() {
     const [planos, setPlanos] = useState([{
         nome: '100Mb',
-        valor: 'R$ 90,00',
+        valor: 'R$ 99,99',
         tipo: 'Rádio/Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
     {
         nome: '200Mb',
         valor: 'R$ 130,00',
-        tipo: 'Rádio/Fibra',
+        tipo: 'Fibra',
+        frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+        nome: '300Mb',
+        valor: 'R$ 150,00',
+        tipo: 'Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
     // {
