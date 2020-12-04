@@ -3,35 +3,35 @@ import styles from '../../styles/Planos.module.css'
 
 export default function Plano() {
     const [planos, setPlanos] = useState([{
-        nome: '10Mb',
+        nome: '100Mb',
         valor: 'R$ 90,00',
         tipo: 'Rádio/Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
     {
-        nome: '15Mb',
-        valor: 'R$ 100,00',
+        nome: '200Mb',
+        valor: 'R$ 130,00',
         tipo: 'Rádio/Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
-    {
-        nome: '20Mb',
-        valor: 'R$ 120,00',
-        tipo: 'Exclusivo Fibra',
-        frase: 'Garantimos à você a melhor experiência',
-    },
-    {
-        nome: '30Mb',
-        valor: 'R$ 130,00',
-        tipo: 'Exclusivo Fibra',
-        frase: 'Garantimos à você a melhor experiência',
-    },
-    {
-        nome: '50Mb',
-        valor: 'R$ 160,00',
-        tipo: 'Exclusivo Fibra',
-        frase: 'Garantimos à você a melhor experiência',
-    }
+    // {
+    //     nome: '20Mb',
+    //     valor: 'R$ 120,00',
+    //     tipo: 'Exclusivo Fibra',
+    //     frase: 'Garantimos à você a melhor experiência',
+    // },
+    // {
+    //     nome: '30Mb',
+    //     valor: 'R$ 130,00',
+    //     tipo: 'Exclusivo Fibra',
+    //     frase: 'Garantimos à você a melhor experiência',
+    // },
+    // {
+    //     nome: '50Mb',
+    //     valor: 'R$ 160,00',
+    //     tipo: 'Exclusivo Fibra',
+    //     frase: 'Garantimos à você a melhor experiência',
+    // }
     ])
 
     function sendWhatsappMessage(plano) {
@@ -83,7 +83,7 @@ export default function Plano() {
                 ))}
             </div>
                 <small>*A internet à rádio é apenas para localidades que ainda não possuem fibra òptica</small>
-                <small>*Para a zona rural, a adesão pode ser 1X de R$150 + 12 parcelas de R$30,00</small>
+                <small>*Para a zona rural, a adesão pode ser dividida em até 6 vezes</small>
         </div>
     )
 }
