@@ -73,13 +73,13 @@
     min-height: 100vh;
     top: 0;
     right: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.4s;
     background: rgb(57, 184, 232);
     background: linear-gradient(0deg, rgba(57, 184, 232, 1) 0%, rgba(0, 146, 228, 1) 87%);
-    position: relative;
+    position: fixed;
     animation: changeWidthMenu 0.5s;
     z-index: 2;
 }
@@ -180,7 +180,7 @@
     font-weight: 600;
 }
 
-.abrir_chamado_div{
+.abrir_chamado_div {
     background-color: #FC852B;
     min-width: 200px;
     padding: 2px;
@@ -300,7 +300,7 @@
 }
 
 .goToTop {
-    display: none;
+    display: block;
     /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */

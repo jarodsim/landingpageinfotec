@@ -3,11 +3,11 @@ import styles from '../../styles/Onde.module.css'
 
 export default function Onde() {
     return (
-        <div className={styles.container} id="onde">
+        <div className={styles.container} id='onde'>
             <h2>Onde Atendemos?</h2>
                 <div className={styles.body}>
                         <div className={styles.imagem}>
-                            <img src="/onde.png" alt="imagem figurativa que representa um mapa"/>
+                            <img src='/onde.png' alt='imagem figurativa que representa um mapa'/>
                         </div>
                 <div className={styles.localidades}>
                     <h3>A Info-tec leva internet de qualidade para as seguintes localidades</h3>

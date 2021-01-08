@@ -2,50 +2,38 @@ import React, { useState } from 'react'
 import styles from '../../styles/Planos.module.css'
 
 export default function Plano() {
-    const [planos, setPlanos] = useState([{
-        nome: '100Mb',
-        valor: 'R$ 99,99',
+    const [planos] = useState([{
+        nome: '10Mb',
+        valor: 'R$ 90,00',
         tipo: 'Rádio/Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
     {
-        nome: '200Mb',
+        nome: '15Mb',
+        valor: 'R$ 100,00',
+        tipo: 'Fibra',
+        frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+        nome: '30Mb',
         valor: 'R$ 130,00',
         tipo: 'Fibra',
         frase: 'Garantimos à você a melhor experiência',
     },
     {
-        nome: '300Mb',
-        valor: 'R$ 150,00',
-        tipo: 'Fibra',
+        nome: '50Mb',
+        valor: 'R$ 160,00',
+        tipo: 'Exclusivo Fibra',
         frase: 'Garantimos à você a melhor experiência',
-    },
-    // {
-    //     nome: '20Mb',
-    //     valor: 'R$ 120,00',
-    //     tipo: 'Exclusivo Fibra',
-    //     frase: 'Garantimos à você a melhor experiência',
-    // },
-    // {
-    //     nome: '30Mb',
-    //     valor: 'R$ 130,00',
-    //     tipo: 'Exclusivo Fibra',
-    //     frase: 'Garantimos à você a melhor experiência',
-    // },
-    // {
-    //     nome: '50Mb',
-    //     valor: 'R$ 160,00',
-    //     tipo: 'Exclusivo Fibra',
-    //     frase: 'Garantimos à você a melhor experiência',
-    // }
+    }
     ])
 
     function sendWhatsappMessage(plano) {
         window.location.href = `https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20interessado%20no%20plano%20de%20${plano}`
-      }
+    }
 
     return (
-        <div className={styles.planos_container} id="planos">
+        <div className={styles.planos_container} id='planos'>
             {/* CABEÇALHO */}
             <div className={styles.cabecalho}>
 
@@ -88,8 +76,8 @@ export default function Plano() {
                     </div>
                 ))}
             </div>
-                <small>*A internet à rádio é apenas para localidades que ainda não possuem fibra òptica</small>
-                <small>*Para a zona rural, a adesão pode ser dividida em até 6 vezes</small>
+            <small>*A internet à rádio é apenas para localidades que ainda não possuem fibra òptica</small>
+            <small>*Para a zona rural, a adesão pode ser dividida em até 6 vezes</small>
         </div>
     )
 }

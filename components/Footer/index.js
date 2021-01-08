@@ -10,14 +10,15 @@ export default function Footer() {
 
     return (
         <div className={styles.container}>
-            <h3 className={styles.frase}>"Mais que produtos, vendemos soluções!"</h3>
+            <h3 className={styles.frase}>'Mais que produtos, vendemos soluções!'</h3>
             <div className={styles.info}>
                 <div className={styles.links}>
                     <h3>Acesso Rápido</h3>
-                    <Link href="#planos">Planos</Link>
-                    <Link href="#onde">Onde Atendemos</Link>
-                    <Link href="#quem_somos">Quem Somos</Link>
-                    <Link href="#topo">Topo</Link>
+                    <Link href='#planos'>Planos</Link>
+                    <Link href='#onde'>Onde Atendemos</Link>
+                    <Link href='#quem_somos'>Quem Somos</Link>
+                    <Link href='#topo'>Topo</Link>
+                    <Link href='https://drive.google.com/file/d/1UBo2sZ7ZPnnppzqa1AR4NnCeJ07mUUXZ/view?usp=sharing' className={styles.btn_contrato}>Baixar Contrato</Link>
                 </div>
 
                 <div className={styles.endereco}>

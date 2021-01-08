@@ -47,6 +47,14 @@
     list-style: none;
 }
 
+.btn_contrato {
+    background-color: #FC852B;
+    min-width: 200px;
+    padding: 2px;
+    border-radius: 4px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1080px) {
     .info {
         flex-flow: column;
