@@ -18,7 +18,7 @@ export default function Footer() {
                     <Link href='#onde'>Onde Atendemos</Link>
                     <Link href='#quem_somos'>Quem Somos</Link>
                     <Link href='#topo'>Topo</Link>
-                    <Link href='https://drive.google.com/file/d/1UBo2sZ7ZPnnppzqa1AR4NnCeJ07mUUXZ/view?usp=sharing' className={styles.btn_contrato}>Baixar Contrato</Link>
+                    <Link href='https://drive.google.com/file/d/1UGTvz0nhvkjckjSoyQ7DjPr_UkmHO7tg/view?usp=sharing' className={styles.btn_contrato}>Baixar Contrato</Link>
                 </div>
 
                 <div className={styles.endereco}>

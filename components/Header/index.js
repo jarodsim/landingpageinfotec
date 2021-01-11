@@ -94,9 +94,9 @@ export default function Header() {
                     </div>
 
                     <div className={styles.body_menu}>
-                        <Link href='#planos'>Nossos Planos</Link>
-                        <Link href='#onde'>Onde Atendemos</Link>
-                        <Link href='#quem_somos'>Quem Somos</Link>
+                        <a href='#planos' onClick={() => setShowMenuMobile(false)}>Nossos Planos</a>
+                        <a href='#onde' onClick={() => setShowMenuMobile(false)}>Onde Atendemos</a>
+                        <a href='#quem_somos' onClick={() => setShowMenuMobile(false)}>Quem Somos</a>
                         <p className={styles.area_do_cliente_btn}>
                             <Link href='https://portal.interativabr.com.br/facilita' >Área do Cliente</Link>
                         </p>

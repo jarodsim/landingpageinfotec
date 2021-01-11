@@ -6,6 +6,7 @@ import QuemSomos from '../components/QuemSomos'
 import Onde from '../components/Onde'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+// import Carrousel from '../components/Carrousel'
 
 export default function Home() {
 
@@ -44,6 +45,8 @@ export default function Home() {
       </Head>
       {/* HEADER */}
       <Header />
+      {/* HEADER */}
+      {/* <Carrousel /> */}
       {/* PLANOS */}
       <Plano />
       {/* ONDE ESTAMOS */}
