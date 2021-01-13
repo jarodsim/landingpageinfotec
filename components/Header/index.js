@@ -9,17 +9,30 @@ export default function Header() {
     let header = ''
 
     function sendWhatsappMessage() {
-        window.location.href = 'https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?'
+        window.location.href =
+            'https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?'
     }
 
     // to change the header background according the mouse scroll
     useEffect(() => {
-        window.onscroll = function () { scrollFunction() }
+        window.onscroll = function () {
+            scrollFunction()
+        }
 
         function scrollFunction() {
-            header = screen.width > 1024 ? header = document.getElementsByClassName('Header_header__182Qc')[0] : header = document.getElementsByClassName('Header_header_mobile__19UYL')[0]
+            header =
+                screen.width > 1024
+                    ? (header = document.getElementsByClassName(
+                        'Header_header__182Qc'
+                    )[0])
+                    : (header = document.getElementsByClassName(
+                        'Header_header_mobile__19UYL'
+                    )[0])
 
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
                 header.style.backgroundColor = '#18C3FF'
                 header.style.width = '100%'
                 setShowButonGoToTop(true)
@@ -40,7 +53,7 @@ export default function Header() {
             header.style.display = 'flex'
         }
 
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        const c = document.documentElement.scrollTop || document.body.scrollTop
         if (c > 0) {
             window.scrollTo(0, 0)
             // window.requestAnimationFrame(goToTop);
@@ -53,77 +66,118 @@ export default function Header() {
             <div className={styles.container_header}>
                 <header className={styles.header}>
                     <div className={styles.left_header}>
-                        <a href='/'>Info-Tec</a>
+                        <img src="/frase.png" alt="logo da info-tec" />
                     </div>
 
                     <div className={styles.rigth_header}>
-                        <Link href='#planos'>Nossos Planos</Link>
-                        <Link href='#onde'>Onde Atendemos</Link>
-                        <Link href='#quem_somos'>Quem Somos</Link>
+                        <Link href="#planos">Nossos Planos</Link>
+                        <Link href="#onde">Onde Atendemos</Link>
+                        <Link href="#quem_somos">Quem Somos</Link>
 
                         <div className={styles.dropdown}>
                             <p className={styles.dropdown_btn}>Está Sem Internet?</p>
                             <div className={styles.dropdown_content}>
-                                <Link href='https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet'>Abrir chamado</Link>
+                                <Link href="https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet">
+                                    Abrir chamado
+                                </Link>
                             </div>
                         </div>
                         <p className={styles.area_do_cliente_btn}>
-                            <Link href='https://portal.interativabr.com.br/facilita' >Área do Cliente</Link>
+                            <Link href="https://portal.interativabr.com.br/facilita">
+                                Área do Cliente
+                            </Link>
                         </p>
-
                     </div>
                 </header>
                 {/* HEADER-MOBILE */}
                 <header className={styles.header_mobile}>
                     <div className={styles.left_header}>
-                        <a href='/'>Info-Tec</a>
+                        <img src="/frase.png" alt="logo da info-tec" />
                     </div>
 
-                    <button className={styles.btn_menu} onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                        <img src='/menu.png' alt='ícone de um botão para abrir o menu de opções' />
+                    <button
+                        className={styles.btn_menu}
+                        onClick={() => setShowMenuMobile(!showMenuMobile)}
+                    >
+                        <img
+                            src="/menu.png"
+                            alt="ícone de um botão para abrir o menu de opções"
+                        />
                     </button>
                 </header>
 
                 {/* MENU-MOBILE */}
-                {showMenuMobile ? (<header className={styles.menu_mobile}>
-                    <div className={styles.header_menu}>
-                        <a href='/'>Info-Tec</a>
-                        <button className={styles.btn_menu} onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                            <img src='/close.png' alt='ícone de um botão para abrir o menu de opções' />
-                        </button>
-                    </div>
-
-                    <div className={styles.body_menu}>
-                        <a href='#planos' onClick={() => setShowMenuMobile(false)}>Nossos Planos</a>
-                        <a href='#onde' onClick={() => setShowMenuMobile(false)}>Onde Atendemos</a>
-                        <a href='#quem_somos' onClick={() => setShowMenuMobile(false)}>Quem Somos</a>
-                        <p className={styles.area_do_cliente_btn}>
-                            <Link href='https://portal.interativabr.com.br/facilita' >Área do Cliente</Link>
-                        </p>
-
-                        <hr />
-
-                        <p className={styles.sem_internet_paragraph}>Está Sem Internet?</p>
-                        <div className={styles.abrir_chamado_div}>
-                            <Link href='https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet' >Abrir chamado</Link>
+                {showMenuMobile ? (
+                    <header className={styles.menu_mobile}>
+                        <div className={styles.header_menu}>
+                            <img src="/frase.png" alt="logo da info-tec" />
+                            <button
+                                className={styles.btn_menu}
+                                onClick={() => setShowMenuMobile(!showMenuMobile)}
+                            >
+                                <img
+                                    src="/close.png"
+                                    alt="ícone de um botão para abrir o menu de opções"
+                                />
+                            </button>
                         </div>
-                    </div>
-                </header>) : ''}
+
+                        <div className={styles.body_menu}>
+                            <a href="#planos" onClick={() => setShowMenuMobile(false)}>
+                                Nossos Planos
+                            </a>
+                            <a href="#onde" onClick={() => setShowMenuMobile(false)}>
+                                Onde Atendemos
+                            </a>
+                            <a href="#quem_somos" onClick={() => setShowMenuMobile(false)}>
+                                Quem Somos
+                            </a>
+                            <p className={styles.area_do_cliente_btn}>
+                                <Link href="https://portal.interativabr.com.br/facilita">
+                                    Área do Cliente
+                            </Link>
+                            </p>
+
+                            <hr />
+
+                            <p className={styles.sem_internet_paragraph}>
+                                Está Sem Internet?
+                            </p>
+                            <div className={styles.abrir_chamado_div}>
+                                <Link href="https://wa.me/+5589994578337?text=Olá,%20Tudo%20Bem?%20Estou%20com%20problemas%20na%20internet">
+                                    Abrir chamado
+                                </Link>
+                            </div>
+                        </div>
+                    </header>
+                ) : (
+                        ''
+                    )}
             </div>
             {/* MAIN-INFOS */}
             <div className={styles.sides}>
                 <div className={styles.left}>
-                    <img src='/robo.png' alt='logo do robozinho da info-tec' className={styles.robo_image} />
+                    <img
+                        src="/robo.png"
+                        alt="logo do robozinho da info-tec"
+                        className={styles.robo_image}
+                    />
                 </div>
 
                 <div className={styles.rigth}>
                     <h1>Site da info-tec em desenvolvimento</h1>
-                    <h3>Estamos trabalhando para cada dia  lhe atender melhor.</h3>
+                    <h3>Estamos trabalhando para cada dia lhe atender melhor.</h3>
 
                     <div className={styles.contato}>
-                        <p>Você pode entrar em contato conôsco, é só mandar uma mensagem para o nosso whatsapp :)</p>
+                        <p>
+                            Você pode entrar em contato conôsco, é só mandar uma mensagem para
+                            o nosso whatsapp :)
+                         </p>
 
-                        <button className={styles.btn_whatsapp} onClick={() => sendWhatsappMessage()}>
+                        <button
+                            className={styles.btn_whatsapp}
+                            onClick={() => sendWhatsappMessage()}
+                        >
                             Mandar mensagem!
                         </button>
                     </div>
@@ -133,9 +187,14 @@ export default function Header() {
             {/* GO TO TOP BUTTON */}
             {showButtonGoToTop ? (
                 <button className={styles.goToTop} onClick={() => goToTop()}>
-                    <img src='/top.png' alt='ícone de seta para cima para levar o usuário para o topo da página' />
+                    <img
+                        src="/top.png"
+                        alt="ícone de seta para cima para levar o usuário para o topo da página"
+                    />
                 </button>
-            ) : ''}
+            ) : (
+                    ''
+                )}
         </div>
     )
 }

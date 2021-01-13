@@ -7,7 +7,7 @@ export default function QuemSomos() {
                         <h2>Quem Somos?</h2>
                         <div className={styles.body}>
                                 <div className={styles.imagem}>
-                                        <img src='/frase.png' alt='imagem figurativa que representa um time'/>
+                                        <img src='/frase.png' alt='imagem figurativa que representa um time' />
                                 </div>
                                 <div className={styles.texto}>
                                         <blockquote>

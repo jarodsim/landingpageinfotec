@@ -35,9 +35,9 @@ export default function Footer() {
                         Nos mande uma mensagem pelo whatsapp: 89994578337
                     </p>
 
-                    <p>
-                        Ou nos ligue em nosso 0800, é de graça :) 08000420497
-                    </p>
+                    <a href="tel:08000420497">
+                        Ou nos ligue em nosso 0800, é gratuito :) 08000420497
+                    </a>
                 </div>
             </div>
             <small>&copy; Todos os direitos reservados a info-tec - 2020</small></div>
