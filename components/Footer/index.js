@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.frase}>'Mais que produtos, vendemos soluções!'</h3>
+      <h3 className={styles.frase}>CNPJ: 29.470.487/0001-58</h3>
       <div className={styles.info}>
         <div className={styles.links}>
           <h3>Acesso Rápido</h3>

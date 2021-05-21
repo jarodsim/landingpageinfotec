@@ -6,25 +6,31 @@ export default function Plano() {
     {
       nome: '10Mb',
       valor: 'R$ 90,00',
-      tipo: 'Rádio/Fibra',
+      tipo: 'Rádio',
       frase: 'Garantimos à você a melhor experiência',
     },
     {
-      nome: '20Mb',
+      nome: '15Mb',
       valor: 'R$ 100,00',
-      tipo: 'Rádio/Fibra',
-      frase: 'Garantimos à você a melhor experiência',
-    },
-    {
-      nome: '30Mb',
-      valor: 'R$ 130,00',
-      tipo: 'Exclusivo Fibra',
+      tipo: 'Rádio',
       frase: 'Garantimos à você a melhor experiência',
     },
     {
       nome: '50Mb',
-      valor: 'R$ 160,00',
-      tipo: 'Exclusivo Fibra',
+      valor: 'R$ 90,99',
+      tipo: 'Exclusivo Fibra Óptica',
+      frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+      nome: '80Mb',
+      valor: 'R$ 100,99',
+      tipo: 'Exclusivo Fibra Óptica',
+      frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+      nome: '200Mb',
+      valor: 'R$ 150,99',
+      tipo: 'Exclusivo Fibra Óptica',
       frase: 'Garantimos à você a melhor experiência',
     },
   ])
@@ -39,7 +45,7 @@ export default function Plano() {
       <div className={styles.cabecalho}>
         <h1>Conheça Nossos Planos</h1>
         <h2>
-          Adesão de R$250,00 à vista para a zona urbana e R$380,00 à vista para
+          Adesão de R$240,00 à vista para a zona urbana e R$380,00 à vista para
           a zona rural
         </h2>
       </div>
