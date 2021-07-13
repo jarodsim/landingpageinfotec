@@ -34,6 +34,8 @@
 
 .localidades {
     width: 50%;
+    font-size: 1.3em;
+    font-family: 'Mulish';
 }
 
 @media screen and (max-width: 600px) {
@@ -46,6 +48,6 @@
     }
 
     .localidades {
-        width: 100%;
+        width: 95%;
     }
 }
