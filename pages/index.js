@@ -6,6 +6,7 @@ import QuemSomos from '../components/QuemSomos'
 import Onde from '../components/Onde'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Clientes from '../components/Clientes'
 // import Carrousel from '../components/Carrousel'
 
 export default function Home() {
@@ -51,6 +52,8 @@ export default function Home() {
       <Plano />
       {/* ONDE ESTAMOS */}
       <Onde />
+      {/* QUEM ATENDEMOS */}
+      <Clientes />
       {/* QUEM SOMOS */}
       <QuemSomos />
       {/* FOOTER */}
