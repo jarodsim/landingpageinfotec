@@ -14,21 +14,21 @@ export default function Footer() {
       <h3 className={styles.frase}>CNPJ: 29.470.487/0001-58</h3>
       <div className={styles.info}>
         <div className={styles.links}>
-          <h3>Acesso Rápido</h3>
+          <h3>Acesso rápido</h3>
           <Link href="#planos">Planos</Link>
-          <Link href="#onde">Onde Atendemos</Link>
-          <Link href="#quem_somos">Quem Somos</Link>
+          <Link href="#onde">Onde atendemos</Link>
+          <Link href="#quem_somos">Quem somos</Link>
           <Link href="#topo">Topo</Link>
           <Link
             href="https://drive.google.com/file/d/1UGTvz0nhvkjckjSoyQ7DjPr_UkmHO7tg/view?usp=sharing"
             className={styles.btn_contrato}
           >
-            Baixar Contrato
+            Baixar contrato
           </Link>
         </div>
 
         <div className={styles.endereco}>
-          <h3>Onde Nos Encontrar</h3>
+          <h3>Onde nos encontrar</h3>
           <address>
             Francisco Ayres - PI, <br />
             Rua Tito Ferreia, 420 - Bairro Centro
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.contato}>
-          <h3>Formas de Contato</h3>
+          <h3>Formas de contato</h3>
           <p onClick={() => sendWhatsappMessage()}>
             Nos mande uma mensagem pelo whatsapp: 89994578337
           </p>

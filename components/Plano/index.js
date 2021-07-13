@@ -4,33 +4,33 @@ import styles from '../../styles/Planos.module.css'
 export default function Plano() {
   const [planos] = useState([
     {
-      nome: '10Mb',
-      valor: 'R$ 90,00',
-      tipo: 'Rádio',
-      frase: 'Garantimos à você a melhor experiência',
-    },
-    {
-      nome: '15Mb',
-      valor: 'R$ 100,00',
-      tipo: 'Rádio',
-      frase: 'Garantimos à você a melhor experiência',
-    },
-    {
       nome: '50Mb',
-      valor: 'R$ 90,99',
+      valor: 'R$ 89,99',
       tipo: 'Exclusivo Fibra Óptica',
       frase: 'Garantimos à você a melhor experiência',
     },
     {
       nome: '80Mb',
-      valor: 'R$ 100,99',
+      valor: 'R$ 99,99',
       tipo: 'Exclusivo Fibra Óptica',
       frase: 'Garantimos à você a melhor experiência',
     },
     {
       nome: '200Mb',
-      valor: 'R$ 150,99',
+      valor: 'R$ 149,99',
       tipo: 'Exclusivo Fibra Óptica',
+      frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+      nome: '10Mb',
+      valor: 'R$ 90,00',
+      tipo: 'Rádio - Zona Rural',
+      frase: 'Garantimos à você a melhor experiência',
+    },
+    {
+      nome: '15Mb',
+      valor: 'R$ 100,00',
+      tipo: 'Rádio - Zona Rural',
       frase: 'Garantimos à você a melhor experiência',
     },
   ])

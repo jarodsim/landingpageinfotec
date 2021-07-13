@@ -4,7 +4,7 @@ import styles from '../../styles/QuemSomos.module.css'
 export default function QuemSomos() {
         return (
                 <div className={styles.quem_somos} id='quem_somos'>
-                        <h2>Quem Somos?</h2>
+                        <h2>Quem somos?</h2>
                         <div className={styles.body}>
                                 <div className={styles.imagem}>
                                         <img src='/frase.png' alt='imagem figurativa que representa um time' />
